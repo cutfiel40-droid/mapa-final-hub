@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfd27d3b681b268fe43dbf5876902ba4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cfd27d3b681b268fe43dbf5876902ba4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfd27d3b681b268fe43dbf5876902ba4 = L.map(
+                "map_cfd27d3b681b268fe43dbf5876902ba4",
+                {
+                    center: [8.447799999999997, -38.5853],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9bc4abc226fdf8068cfeca1ce191f8a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 2,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e9bc4abc226fdf8068cfeca1ce191f8a.addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            map_cfd27d3b681b268fe43dbf5876902ba4.fitBounds(
+                [[-44.6118, -87.0428], [61.5074, 9.8722]],
+                {"padding": [20, 20]}
+            );
+        
+    
+            var marker_832aaf356437a14d1db08e3a6304f306 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            var icon_f759bf6d06083c68255fe327d7437b0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e74b5503cec9150e89e0ec9a6058e4f = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_62013ef241d270e0dcad16a565b59859 = $(`<div id="html_62013ef241d270e0dcad16a565b59859" style="width: 100.0%; height: 100.0%;">     <div style="width: 350px; font-family: Arial, sans-serif; padding: 15px; line-height: 1.5;">         <h4 style="color: #2E86AB; margin: 0 0 15px 0; font-size: 16px; font-weight: bold;">             Caso IA Sindical - España         </h4>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🏢 Organización:</strong> Comité de Empresa El Norte de Castilla         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🤖 Tipo IA:</strong> Otros         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📊 Estado:</strong> Completado         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📄 Fuente:</strong> Convenios Colectivos         </p>          <p style="margin: 8px 0; font-size: 12px;"><strong>👥 Actores:</strong> ['Sindicatos', 'Empresas del sector (empleadoras)']</p>          <hr style="margin: 12px 0; border: 1px solid #ddd;">          <p style="margin: 8px 0; font-size: 12px; font-style: italic;">             <strong>📝 Descripción:</strong> El XXIX Convenio Colectivo de El Norte de Castilla (2021-2023) regula la introducción de tecnologías digitales en el sector de prensa escrita, protegiendo el empleo frente a la automatización y garantizando formación y participación sindical en decisiones tecnológicas durante la crisis estructural del sector.         </p>                   <p style="margin: 10px 0; font-size: 13px;">             <strong>🔗 URL:</strong>              <span style="color: #2E86AB; font-size: 12px; word-break: break-all;">                 https://www.convenioscolectivos.net/el-norte-de-castilla-s-a/             </span>         </p>      </div>     </div>`)[0];
+                popup_1e74b5503cec9150e89e0ec9a6058e4f.setContent(html_62013ef241d270e0dcad16a565b59859);
+            
+        
+
+        marker_832aaf356437a14d1db08e3a6304f306.bindPopup(popup_1e74b5503cec9150e89e0ec9a6058e4f)
+        ;
+
+        
+    
+    
+            marker_832aaf356437a14d1db08e3a6304f306.bindTooltip(
+                `<div>
+                     España: Sin título...
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_832aaf356437a14d1db08e3a6304f306.setIcon(icon_f759bf6d06083c68255fe327d7437b0e);
+            
+    
+            var marker_84fd3d17cd05a0b27ccd05708aae5722 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            var icon_2d2a3a5145d89611206c2e5ddcdb87fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82a4fe152b441f0b6298642a86c9eb2d = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_f31b54c8579f184da0fadb7fe8609fcd = $(`<div id="html_f31b54c8579f184da0fadb7fe8609fcd" style="width: 100.0%; height: 100.0%;">     <div style="width: 350px; font-family: Arial, sans-serif; padding: 15px; line-height: 1.5;">         <h4 style="color: #2E86AB; margin: 0 0 15px 0; font-size: 16px; font-weight: bold;">             Caso IA Sindical - Reino Unido         </h4>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🏢 Organización:</strong> Unions 21         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🤖 Tipo IA:</strong> Otros         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📊 Estado:</strong> En Desarrollo         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📄 Fuente:</strong> Agile unions         </p>          <p style="margin: 8px 0; font-size: 12px;"><strong>👥 Actores:</strong> ['Organizaciones Internacionales', 'Sindicatos']</p>          <hr style="margin: 12px 0; border: 1px solid #ddd;">          <p style="margin: 8px 0; font-size: 12px; font-style: italic;">             <strong>📝 Descripción:</strong> Proyecto que capacita a sindicatos en el uso ético de la inteligencia artificial. Ofrece cursos como "Responsible AI Fundamentals for Union Staff", webinars y estudios de caso para ayudar a las organizaciones sindicales a comprender, adquirir habilidades y formar redes de apoyo en la era de la IA, promoviendo su adopción responsable en actividades como desarrollo de materiales, atención a afiliados y automatización interna con enfoque ético.         </p>                   <p style="margin: 10px 0; font-size: 13px;">             <strong>🔗 URL:</strong>              <span style="color: #2E86AB; font-size: 12px; word-break: break-all;">                 https://www.agileunions.ai/             </span>         </p>      </div>     </div>`)[0];
+                popup_82a4fe152b441f0b6298642a86c9eb2d.setContent(html_f31b54c8579f184da0fadb7fe8609fcd);
+            
+        
+
+        marker_84fd3d17cd05a0b27ccd05708aae5722.bindPopup(popup_82a4fe152b441f0b6298642a86c9eb2d)
+        ;
+
+        
+    
+    
+            marker_84fd3d17cd05a0b27ccd05708aae5722.bindTooltip(
+                `<div>
+                     Reino Unido: Sin título...
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84fd3d17cd05a0b27ccd05708aae5722.setIcon(icon_2d2a3a5145d89611206c2e5ddcdb87fb);
+            
+    
+            var marker_e79c7bb42a9bf0e282a70c227da36239 = L.marker(
+                [-15.7975, -47.8919],
+                {
+}
+            ).addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            var icon_e54eb20175c9e953e2758747d99b0c00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e530a63ddedb7cd3e2804f10db7309d0 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_3548e8514fd56e82a1ba915c7e654390 = $(`<div id="html_3548e8514fd56e82a1ba915c7e654390" style="width: 100.0%; height: 100.0%;">     <div style="width: 350px; font-family: Arial, sans-serif; padding: 15px; line-height: 1.5;">         <h4 style="color: #2E86AB; margin: 0 0 15px 0; font-size: 16px; font-weight: bold;">             Caso IA Sindical - Brasil         </h4>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🏢 Organización:</strong> Sindimoto-RS         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🤖 Tipo IA:</strong> Automatización         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📊 Estado:</strong> Activo         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📄 Fuente:</strong> Sindimoto-RS         </p>          <p style="margin: 8px 0; font-size: 12px;"><strong>👥 Actores:</strong> ['Sindicatos', 'Empresas del sector (empleadoras)']</p>          <hr style="margin: 12px 0; border: 1px solid #ddd;">          <p style="margin: 8px 0; font-size: 12px; font-style: italic;">             <strong>📝 Descripción:</strong> En 2024 se firmó el primer convenio colectivo entre un sindicato y una plataforma en Brasil. Crea una Cámara de Conciliación Prévia para conflictos derivados de la gestión algorítmica y obliga a iFood a habilitar espacios físicos dignos para repartidores. Refuerza la regulación participativa de la IA en el trabajo digital.         </p>                   <p style="margin: 10px 0; font-size: 13px;">             <strong>🔗 URL:</strong>              <span style="color: #2E86AB; font-size: 12px; word-break: break-all;">                 https://www.ctb.org.br/2024/03/07/sindimoto-rs-celebra-acordo-com-ifood-que-melhora-condicoes-de-motofrete/             </span>         </p>      </div>     </div>`)[0];
+                popup_e530a63ddedb7cd3e2804f10db7309d0.setContent(html_3548e8514fd56e82a1ba915c7e654390);
+            
+        
+
+        marker_e79c7bb42a9bf0e282a70c227da36239.bindPopup(popup_e530a63ddedb7cd3e2804f10db7309d0)
+        ;
+
+        
+    
+    
+            marker_e79c7bb42a9bf0e282a70c227da36239.bindTooltip(
+                `<div>
+                     Brasil: Sin título...
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e79c7bb42a9bf0e282a70c227da36239.setIcon(icon_e54eb20175c9e953e2758747d99b0c00);
+            
+    
+            var marker_cac1eff03b9505c2eddee97bd3a092c8 = L.marker(
+                [-12.0464, -77.0428],
+                {
+}
+            ).addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            var icon_f242b037398562f5d4f575b7354e8e29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ee1d403ff51852d8995c461485b3908 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_1c29ad7e08393dfc8e3dbe0ec6fa0b7b = $(`<div id="html_1c29ad7e08393dfc8e3dbe0ec6fa0b7b" style="width: 100.0%; height: 100.0%;">     <div style="width: 350px; font-family: Arial, sans-serif; padding: 15px; line-height: 1.5;">         <h4 style="color: #2E86AB; margin: 0 0 15px 0; font-size: 16px; font-weight: bold;">             Caso IA Sindical - Perú         </h4>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🏢 Organización:</strong> Organización Internacional del Trabajo (OIT)         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🤖 Tipo IA:</strong> Procesamiento de Datos         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📊 Estado:</strong> Activo         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📄 Fuente:</strong> OIT – Observatorio IA y Trabajo         </p>          <p style="margin: 8px 0; font-size: 12px;"><strong>👥 Actores:</strong> ['Organizaciones Internacionales', 'Sindicatos', 'Gobiernos locales/regionales', 'OIT (Organización Internacional del Trabajo)']</p>          <hr style="margin: 12px 0; border: 1px solid #ddd;">          <p style="margin: 8px 0; font-size: 12px; font-style: italic;">             <strong>📝 Descripción:</strong> Plataforma internacional que estudia los impactos de la IA en empleo, desigualdades y derechos laborales, con foco en América Latina y el Caribe. Produce guías y documentos técnicos, y promueve espacios tripartitos para definir estándares de gobernanza con enfoque de trabajo decente.         </p>                   <p style="margin: 10px 0; font-size: 13px;">             <strong>🔗 URL:</strong>              <span style="color: #2E86AB; font-size: 12px; word-break: break-all;">                 https://www.ilo.org/es/artificial-intelligence-and-work-digital-economy             </span>         </p>      </div>     </div>`)[0];
+                popup_3ee1d403ff51852d8995c461485b3908.setContent(html_1c29ad7e08393dfc8e3dbe0ec6fa0b7b);
+            
+        
+
+        marker_cac1eff03b9505c2eddee97bd3a092c8.bindPopup(popup_3ee1d403ff51852d8995c461485b3908)
+        ;
+
+        
+    
+    
+            marker_cac1eff03b9505c2eddee97bd3a092c8.bindTooltip(
+                `<div>
+                     Perú: Sin título...
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cac1eff03b9505c2eddee97bd3a092c8.setIcon(icon_f242b037398562f5d4f575b7354e8e29);
+            
+    
+            var marker_c6b00fe3297b28491d83e119dfa40ad2 = L.marker(
+                [-34.6118, -58.396],
+                {
+}
+            ).addTo(map_cfd27d3b681b268fe43dbf5876902ba4);
+        
+    
+            var icon_b9fb7ae4ee1f0fce684d5577db8b6d17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5aa05140623467e9678257edc8cb3b86 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_b03bfbd6d5f9347ed84d29c3911a4481 = $(`<div id="html_b03bfbd6d5f9347ed84d29c3911a4481" style="width: 100.0%; height: 100.0%;">     <div style="width: 350px; font-family: Arial, sans-serif; padding: 15px; line-height: 1.5;">         <h4 style="color: #2E86AB; margin: 0 0 15px 0; font-size: 16px; font-weight: bold;">             Caso IA Sindical - Argentina         </h4>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🏢 Organización:</strong> Fundación de Inteligencia Artificial del Sindicato del Seguro         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>🤖 Tipo IA:</strong> Machine Learning         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📊 Estado:</strong> Activo         </p>          <p style="margin: 8px 0; font-size: 12px;">             <strong>📄 Fuente:</strong> Fundación de Inteligencia Artificial (IAF) del Sindicato del Seguro         </p>          <p style="margin: 8px 0; font-size: 12px;"><strong>👥 Actores:</strong> ['Sindicatos', 'Empresas del sector (empleadoras)', 'Gobiernos locales/regionales']</p>          <hr style="margin: 12px 0; border: 1px solid #ddd;">          <p style="margin: 8px 0; font-size: 12px; font-style: italic;">             <strong>📝 Descripción:</strong> Programa gratuito de capacitación en IA aplicada, productividad, innovación y creatividad. Incluye conversatorios con expertos en tecnología, educación y derecho laboral, y fomenta alianzas estratégicas para investigar y difundir el impacto de la IA en el trabajo.         </p>                   <p style="margin: 10px 0; font-size: 13px;">             <strong>🔗 URL:</strong>              <span style="color: #2E86AB; font-size: 12px; word-break: break-all;">                 https://www.iaf.ai/             </span>         </p>      </div>     </div>`)[0];
+                popup_5aa05140623467e9678257edc8cb3b86.setContent(html_b03bfbd6d5f9347ed84d29c3911a4481);
+            
+        
+
+        marker_c6b00fe3297b28491d83e119dfa40ad2.bindPopup(popup_5aa05140623467e9678257edc8cb3b86)
+        ;
+
+        
+    
+    
+            marker_c6b00fe3297b28491d83e119dfa40ad2.bindTooltip(
+                `<div>
+                     Argentina: Sin título...
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6b00fe3297b28491d83e119dfa40ad2.setIcon(icon_b9fb7ae4ee1f0fce684d5577db8b6d17);
+            
+</script>
+</html>
